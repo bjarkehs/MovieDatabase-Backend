@@ -1,0 +1,133 @@
+[
+    {
+        "id": 1,
+        "title": "Star Wars: Episode V - The Empire Strikes Back",
+        "year": 1980,
+        "director": "Irvin Kershner",
+        "stars": [
+            "Mark Hamill",
+            "Harrison Ford",
+            "Carrie Fisher"
+        ],
+        "imageUrl": "sw_ev.jpg",
+        "description": "After the rebels are overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda. His friends accept shelter from a questionable ally as Darth Vader hunts them in a plan to capture Luke."
+    },
+    {
+        "id": 2,
+        "title": "Fight Club",
+        "year": 1999,
+        "director": "David Fincher",
+        "stars": [
+            "Brad Pitt",
+            "Edward Norton",
+            "Meat Loaf"
+        ],
+        "imageUrl": "fightclub.jpg",
+        "description": "An insomniac office worker, looking for a way to change his life, crosses paths with a devil-may-care soapmaker, forming an underground fight club that evolves into something much, much more."
+    },
+    {
+        "id": 3,
+        "title": "Inception",
+        "year": 2010,
+        "director": "Christopher Nolan",
+        "stars": [
+            "Leonardo DiCaprio",
+            "Joseph Gordon-Levitt",
+            "Ellen Page"
+        ],
+        "imageUrl": "inception.jpg",
+        "description": "A thief, who steals corporate secrets through the use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO."
+    },
+    {
+        "id": 4,
+        "title": "The Godfather",
+        "year": 1972,
+        "director": "Francis Ford Coppola",
+        "stars": [
+            "Marlon Brando",
+            "Al Pacino",
+            "James Caan"
+        ],
+        "imageUrl": "thegodfather.jpg",
+        "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+    },
+    {
+        "id": 5,
+        "title": "The Dark Knight",
+        "year": 2008,
+        "director": "Christopher Nolan",
+        "stars": [
+            "Christian Bale",
+            "Heath Ledger",
+            "Aaron Eckhart"
+        ],
+        "imageUrl": "thedarkknight.jpg",
+        "description": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham, the Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice."
+    },
+    {
+        "id": 6,
+        "title": "Interstellar",
+        "year": 2014,
+        "director": "Christopher Nolan",
+        "stars": [
+            "Matthew McConaughey",
+            "Anne Hathaway",
+            "Jessica Chastain"
+        ],
+        "imageUrl": "interstellar.jpg",
+        "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
+    },
+    {
+        "id": 7,
+        "title": "Coco",
+        "year": 2017,
+        "director": "Lee Unkrich",
+        "stars": [
+            "Anthony Gonzalez",
+            "Gael García Bernal",
+            "Benjamin Bratt"
+        ],
+        "imageUrl": "coco.jpg",
+        "description": "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer."
+    },
+    {
+        "id": 8,
+        "title": "The Shawshank Redemption",
+        "year": 1994,
+        "director": "Frank Darabont",
+        "stars": [
+            "Tim Robbins",
+            "Morgan Freeman",
+            "Bob Gunton"
+        ],
+        "imageUrl": "shawshank.jpg",
+        "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+    },
+    {
+        "id": 9,
+        "title": "Star Wars: Episode IV - A New Hope",
+        "year": 1977,
+        "director": "George Lucas",
+        "stars": [
+            "Mark Hamill",
+            "Harrison Ford",
+            "Carrie Fisher"
+        ],
+        "imageUrl": "sw_eiv.jpg",
+        "description": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle-station while also attempting to rescue Princess Leia from the evil Darth Vader."
+    },
+    {
+        "id": 10,
+        "title": "The Big Short",
+        "year": 2015,
+        "director": "Adam McKay",
+        "stars": [
+            "Christian Bale",
+            "Steve Carell",
+            "Ryan Gosling",
+            "Brad Pitt"
+        ],
+        "imageUrl": "thebigshort.jpg",
+        "description": "In 2006-7 a group of investors bet against the US mortgage market. In their research they discover how flawed and corrupt the market is."
+    }
+]
