@@ -24,9 +24,9 @@ movies.forEach(movie => {
     let actorIndex = actors.map(a => a.name).indexOf(star);
     if (actorIndex !== -1) {
       actor = actors[actorIndex];
-      actor.movies.push(movie);
+      actor.movies.push(movie.id);
     } else {
-      actor = { id: actorId, name: star, movies: [movie] };
+      actor = { id: actorId, name: star, movies: [movie.id] };
       actors.push(actor);
       actorId++;
     }
@@ -50,13 +50,15 @@ app.use(
 );
 
 app.get("/movies", (req, res) => {
-  const fullUrl = `${req.protocol}://${req.get("host")}`;
-  const tweakedMovies = movies.map(movie =>
-    Object.assign({}, movie, {
-      absoluteImageUrl: `${fullUrl}${movie.imageUrl}`
-    })
-  );
-  res.json(tweakedMovies);
+  // const fullUrl = `${req.protocol}://${req.get("host")}/-${req.url}/+${
+  //   req.baseUrl
+  // }/=${req.originalUrl}`;
+  // const tweakedMovies = movies.map(movie =>
+  //   Object.assign({}, movie, {
+  //     absoluteImageUrl: `${fullUrl}${movie.imageUrl}`
+  //   })
+  // );
+  res.json(movies);
 });
 
 app.get("/actors", (req, res) => {
