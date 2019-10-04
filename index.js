@@ -9,16 +9,16 @@ const app = express();
 
 const PORT = 3001;
 
-let movies = JSON.parse(
+const MOVIES = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, "movies.json"), "utf8")
 );
-movies.forEach(movie => {
+MOVIES.forEach(movie => {
   movie.imageUrl = `/images/${movie.imageUrl}`;
 });
 
 let actors = [];
 let actorId = 1;
-movies.forEach(movie => {
+MOVIES.forEach(movie => {
   movie.stars.forEach(star => {
     let actor;
     let actorIndex = actors.map(a => a.name).indexOf(star);
@@ -34,7 +34,7 @@ movies.forEach(movie => {
 });
 actors.sort((a, b) => a.name.localeCompare(b.name));
 
-app.use(function(req, res, next) {
+app.use(function(_, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
@@ -49,7 +49,7 @@ app.use(
   serveIndex(path.resolve(__dirname, "public/images"), { icons: true })
 );
 
-app.get("/movies", (req, res) => {
+app.get("/movies", (_, res) => {
   // const fullUrl = `${req.protocol}://${req.get("host")}/-${req.url}/+${
   //   req.baseUrl
   // }/=${req.originalUrl}`;
@@ -58,10 +58,10 @@ app.get("/movies", (req, res) => {
   //     absoluteImageUrl: `${fullUrl}${movie.imageUrl}`
   //   })
   // );
-  res.json(movies);
+  res.json(MOVIES);
 });
 
-app.get("/actors", (req, res) => {
+app.get("/actors", (_, res) => {
   res.json(actors);
 });
 
