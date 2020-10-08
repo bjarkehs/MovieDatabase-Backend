@@ -7,7 +7,7 @@
     "movies-server": "index.js"
   },
   "dependencies": {
-    "express": "4.16.3",
+    "express": "4.17.1",
     "serve-index": "^1.9.1"
   },
   "scripts": {
